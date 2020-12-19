@@ -1,18 +1,11 @@
 {
   "name": "achieve-proxy",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Achieve-proxy is a proxy servlet for the Achieve server.",
   "main": "achieve-proxy",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "server",
-    "proxy",
-    "https",
-    "servlets",
-    "microservices"
-  ],
   "author": "Roger F. Gay (HLL Project http://hll.nu)",
   "license": "MIT",
   "engines": {
@@ -20,5 +13,24 @@
   },
   "dependencies": {
     "achieve": ">=2.0.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/highlevellogic/achieve/issues",
+    "email": "rogerfgay@yahoo.com"
+  },
+  "homepage": "https://github.com/highlevellogic/achieve#readme",
+  "engines": {
+    "node": ">= 12.8.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/highlevellogic/achieve.git"
+  },
+  "keywords": [
+    "server",
+    "proxy",
+    "https",
+    "servlets",
+    "microservices"
+  ]
 }
