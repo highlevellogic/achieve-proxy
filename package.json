@@ -1,6 +1,6 @@
 {
   "name": "achieve-proxy",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Achieve-proxy is a proxy servlet for the Achieve server.",
   "main": "achieve-proxy",
   "scripts": {
@@ -15,16 +15,16 @@
     "achieve": ">=2.0.0"
   },
   "bugs": {
-    "url": "https://github.com/highlevellogic/achieve/issues",
+    "url": "https://github.com/highlevellogic/achieve-proxy/issues",
     "email": "rogerfgay@yahoo.com"
   },
-  "homepage": "https://github.com/highlevellogic/achieve#readme",
+  "homepage": "https://github.com/highlevellogic/achieve-proxy#readme",
   "engines": {
     "node": ">= 12.8.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/highlevellogic/achieve.git"
+    "url": "https://github.com/highlevellogic/achieve-proxy.git"
   },
   "keywords": [
     "server",
