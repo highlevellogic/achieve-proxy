@@ -1,6 +1,6 @@
 {
   "name": "achieve-proxy",
-  "version": "0.3.1",
+  "version": "0.3.3",
   "description": "Achieve-proxy is a proxy servlet for the Achieve server.",
   "main": "achieve-proxy",
   "scripts": {
