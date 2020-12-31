@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+ <head>
+  <title>Solid</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACqklEQVQ4T32RW0hUURiF195zzoypo6Z5SY0uDF00rykp5aWHAvGtJCwhL9SURuqQjVCZQQ+JJGZqKt6iNNFJoR4sAiHyRSpRUxOihxJSqqGccWxu55zdi6eOU7be/rXW/8G/N8E6yj2dPqCJdIQwwtRqf4GoA4RZjTOgqv7s6KKyR9cDBKUvDXuF27ereNLWUT6R6pzfeMcmWkf0zQl1/wVc6k0NP9ce+5kyqmvTT2+N3B3aUzYY3ekbKrxrL5mKcpu1YwW3En5caDzk8xfA0H4gxmJdmfNZ1CU35k9eBQAb+ZhB1EIRgqzBANBd/dIkzeyJsy7bBtYAKroyNzt566jua3Zo3bWhBdmXmHRGZQusgpvfIXv37z2cBydpSlpSMn4D7PT7Jw18dMbqmw4oRCg7qA3i6wgvnlT6K8bObLvDUUMBwNCXmMMRL1N9wZhZWTIMxRQQghHLyhJjRDqszB4h3slRzQYOAECgb8h/dQQeYry7ki6EZRGtW2J+Zv9SU/QgUWGTczYis7XqORNdxMEBAFVhm+fyldo875/ipB8LMz+TONdO5qYut43ebimcHgVmAQBELYSsvgFb+xv9SfttUa9tTgtp5e1+e60z3iq4+QpeKybInVOXM7PUAY4PqycQuxIAib0nIhXu5s/ckK2y7pQR+FuM8uwbZTZSUdNFAYCqSIuhL6lJDgkvHWfL2mNKZkPh2JwkkF3yTFUkrSl//AEFAPWXiCGmtZ4v70z3BQCB2muJWnwKD7ks/BMAKO6Kf8HxtHhNaOxNyyszxQ0DQHlPcqrnsix9R1xf6UDsG3kmyvBi/74igXPUgLJxJtApiPyoe5n7xqgQTH1cuZSwo0TiKhtPvP1zLv6hst7EWIlzbgFIDKFSoCQSOxPJRHPe9cdADlN2fwG8FgTEn90+twAAAABJRU5ErkJggg==">
+  <style>
+   body {
+     background-color: green;
+   }
+   button {
+     margin: 20px;
+     border-radius: 3px;
+     background-color: blue;
+     cursor: pointer;
+   }
+  </style>
+  <script src="https://solid.github.io/solid-auth-client/dist/solid-auth-client.bundle.js"></script>
+  <script src="solid.js"></script>
+<script>
+async function output (msg="", elementID="output") {
+  document.getElementById(elementID).innerHTML = msg;
+}
+async function init () {
+
+}
+window.onload=init;
+
+let idp = 'https://solid.hll.nu:7443';
+// let url = "https://rogerfgay.solid.hll.nu:7443/private/hello.txt";
+ let url = "/proxy/solid/private/hello.txt";
+// let url = "/public/hello.txt";
+</script>
+</head>
+ <body>
+ <h3>Solid Pod Example (... the simple examples do not require web pages.)</h3>
+ <div id="output"></div><br><br>
+ <!-- input id="input"></input -->
+ <button type="button" onclick="login(idp)">login</button>
+ <button type="button" onclick="fetchFile(url)">getFile</button>
+ <button type="button" onclick="logout()">logout</button>
+</body>
+</html>
