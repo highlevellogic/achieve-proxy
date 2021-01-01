@@ -1,6 +1,6 @@
 {
   "name": "achieve-proxy",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Achieve-proxy is a proxy servlet for the Achieve server.",
   "main": "achieve-proxy",
   "scripts": {
@@ -27,6 +27,7 @@
     "url": "https://github.com/highlevellogic/achieve-proxy.git"
   },
   "keywords": [
+    "achieve",
     "server",
     "proxy",
     "https",

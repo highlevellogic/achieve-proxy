@@ -109,7 +109,7 @@ in your custom handler.
 Your custom handler needs to ensure that session.proxyOptions is set properly before passing session on to proxy.run(session). 
 It must then provide the set of options used by 
 <a href="https://nodejs.org/api/http.html#http_http_request_options_callback" target="_blank">http(s).request(options)</a>. The proxy configuration 
-values in achieveserver.js show the minimum set of values needed (defaults: protocol http; ports 80, 443; hostname localhost; method get).</a></h3>
+values in achieveserver.js show the minimum set of values needed (achieve-proxy defaults: get, http, localhost, 80, 443).</a></h3>
 <p>You can combine proxy or custom-proxy servlet use with pre and post processing in a non-proxy servlet. Servlets are created with a JavaScript 
 file containing: </p>
 <p><pre>
