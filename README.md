@@ -102,7 +102,8 @@ custom method that handles the response, you need to set session.allowAsync = tr
 <p>Customization and servlets generally (next example) can transform achieve-proxy from a simple pass-through to a flexible and powerful system. 
 Access control and load balancing seem obvious examples of features you might want to add or enhance. Above, achieve-proxy is described as a many 
 to many proxy. So far, the examples use one proxy-servlet for each target, but one proxy servlet can have more than one target. Note that it is 
-only the key (such as '/proxy/hello') that is needed to route a request to a proxy-servlet. You can create a custom object with any properties that you need - 
+only the key (such as '/proxy/hello') that is needed to route a request to a proxy-servlet.</p>
+<p>You can create a custom object with any properties that you need - 
 so long as you have custom logic in the proxy-servlet to handle it. The object will reach your proxy 
 servlet as session.proxyOptions. Properties <i>path</i> and <i>url</i> are automatically set by achieve, but you can modify them 
 in your custom handler. 
